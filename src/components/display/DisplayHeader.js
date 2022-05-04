@@ -8,8 +8,8 @@ export default class DisplayHeader extends Component {
   render() {
     return (
       <div className='display-header'>
-          <p className='name'>{this.props.firstName} {this.props.secondName}</p>
-          <p className='title'>{this.props.title}</p>
+          <p className='name'>{this.props.personalInfo.firstName} {this.props.personalInfo.lastName}</p>
+          <p className='title'>{this.props.personalInfo.title}</p>
       </div>
     )
   }

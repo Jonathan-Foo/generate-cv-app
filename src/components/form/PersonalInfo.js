@@ -14,7 +14,7 @@ export default class PersonalInfo extends Component {
           <p className='form-title'>Personal Information</p>
           <div>
             <LabelInput name='First Name' id='first-name'  type='text'/>
-            <LabelInput name='Second Name' id='second-name' type='text'/>
+            <LabelInput name='Last Name' id='second-name' type='text'/>
             <LabelInput name='Title' id='title' type='text'/>
             <FileInput name='Photo' id='file' class='file-display' />
             <LabelInput name='Address' id='address' type='text'/>

@@ -8,11 +8,12 @@ export default class MainDisplay extends Component {
     }
 
   render() {
+    const {personalInfo, experience, education} = this.props.cvInfo
+
     return (
       <div className='left-display' id='print-section'>
-          <DisplayHeader firstName='Bob' secondName='Smith' title='Senior Web Developer'/>
-          <Content />
-        
+          <DisplayHeader personalInfo={personalInfo}/>
+          <Content personalInfo={personalInfo} experience={experience} education={education}/>
       </div>
     )
   }

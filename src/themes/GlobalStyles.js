@@ -113,6 +113,7 @@ body {
   display: flex;
   word-wrap: break-word;
   gap: 2.5em;
+  margin-bottom: .5em;
 }
 .info-style2 .detail {
   width: 250px;
@@ -324,6 +325,13 @@ body {
     left: 0;
   }
 }
+
+@media (max-width: 1800px) {
+  .left-display { 
+    position: relative
+  }
+}
+
 `
 
 export default GlobalStyle;

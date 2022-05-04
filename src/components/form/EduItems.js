@@ -10,6 +10,7 @@ export default class EduItems extends Component {
   render() {
     return (
       <div>
+        <Input value={this.props.uniName} type="text" placeholder="University Name" />
         <Input value={this.props.city} type="text" placeholder="City" />
         <Input value={this.props.degree} type="text" placeholder="Degree" />
         <Input value={this.props.city} type="text" placeholder="Subject" />

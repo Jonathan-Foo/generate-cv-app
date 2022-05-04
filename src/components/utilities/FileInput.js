@@ -9,9 +9,9 @@ export default class FileInput extends Component {
   render() {
     return (
       <>
-        <label for={this.props.labelID}>{this.props.labelName}</label>
-        <label className={this.props.class} for={this.props.labelID}>
-            <input type="file" for={this.props.labelID} id={this.props.labelID}/>
+        <label htmlFor={this.props.id}>{this.props.name}</label>
+        <label className={this.props.class} htmlFor={this.props.id}>
+            <input type="file" id={this.props.id}/>
         </label>
       </>
     )

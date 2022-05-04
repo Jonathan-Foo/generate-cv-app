@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import DisplaySection from '../utilities/DisplaySection'
 
 export default class Description extends Component {
     constructor(props) {
@@ -7,9 +8,11 @@ export default class Description extends Component {
 
   render() {
     return (
-      <div className='description'>
-        
-      </div>
+        <DisplaySection className='description' title='Description'>
+        <p className="info-style1">
+            {this.props.personalInfo.description}
+        </p>
+        </DisplaySection> 
     )
   }
 }
