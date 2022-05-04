@@ -12,7 +12,7 @@ export default class MainForm extends Component {
         <PersonalInfo />
         <Experience />
         <Education />
-        <Options />
+        <Options handleReset={this.props.handleReset} handleExample={this.props.handleExample} componentRef={this.props.componentRef.current}/>
         </form>
       </div>
     )

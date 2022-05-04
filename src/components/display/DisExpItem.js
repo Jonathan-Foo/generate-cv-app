@@ -8,13 +8,13 @@ export default class DisExpItem extends Component {
 
   render() {
     return (
-      <div class="info-style2">
-        <div class="time">
-          <p class="info-bold">{this.props.payload.from} - {this.props.payload.to}</p>
+      <div className="info-style2">
+        <div className="time">
+          <p className="info-bold">{this.props.payload.from} - {this.props.payload.to}</p>
         </div>
-        <div class="detail">
-          <p class="info-bold">{this.props.payload.position}</p>
-          <p class="info-subtext">{this.props.payload.company}</p>
+        <div className="detail">
+          <p className="info-bold">{this.props.payload.position}</p>
+          <p className="info-subtext">{this.props.payload.company}</p>
         </div>
       </div>
     )

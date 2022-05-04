@@ -72,11 +72,11 @@ body {
 
 .display-left {
   padding: 1em;
-  width: 70%;
+  width: 525px;
 }
 
 .display-right {
-  width: 30%;
+  width: 225px;
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -84,6 +84,7 @@ body {
   background: hsl(0deg, 0%, 95%);
 }
 .display-right img {
+  width: 200px;
   margin-bottom: 0.5em;
 }
 .display-right div {
@@ -310,20 +311,10 @@ body {
 }
 
 @media print {
-  body * {
-    visibility: hidden;
-  }
-
-  #print-section, #print-section * {
-    visibility: visible;
-    overflow: visible;
-  }
-
-  #print-section {
-    position: absolute !important;
-    top: 0;
-    left: 0;
-  }
+  @page {
+    size: 750px 1002px;
+    margin-top: -10px;
+  } 
 }
 
 @media (max-width: 1800px) {

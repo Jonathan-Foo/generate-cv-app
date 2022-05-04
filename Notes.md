@@ -25,3 +25,5 @@ reader.readAsDataURL(e.target.files[0])
 }
 
 an then input for upload needs an onChange() function that triggers this imageHandler function
+
+Form functions

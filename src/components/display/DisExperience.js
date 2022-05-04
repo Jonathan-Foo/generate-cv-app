@@ -11,6 +11,7 @@ export default class DisExperience extends Component {
     const experienceArr = this.props.experience
     const experienceItems = experienceArr.map(payload => {
       return <DisExpItem
+      key={payload.id}
       payload={payload}
       />
     })
