@@ -5,13 +5,19 @@ import Education from './Education'
 import Options from './Options'
 
 export default class MainForm extends Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
+    const {personalInfo, experience, education} = this.props.cvInfo
+
     return (
       <div className='right-form'>
         <form action="#" autoComplete='off'>
-        <PersonalInfo />
-        <Experience />
-        <Education />
+        <PersonalInfo handlePersonalInfo={this.props.handlePersonalInfo} personalInfo={personalInfo} />
+        <Experience experienceInfo={experience} handleAdd={this.props.handleAdd}/>
+        <Education educationInfo={education} handleAdd={this.props.handleAdd}/>
         <Options handleReset={this.props.handleReset} handleExample={this.props.handleExample} componentRef={this.props.componentRef.current}/>
         </form>
       </div>

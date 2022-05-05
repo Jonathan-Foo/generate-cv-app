@@ -8,8 +8,13 @@ export default class Input extends Component {
     
 
   render() {
+    const handChange = (e) => {
+      const personalInfoChange = this.props.onChange
+      return personalInfoChange(e)
+    }
+
     return (
-      <input id={this.props.id} type={this.props.type} placeholder={this.props.placeholder} value={this.props.value} onChange={this.props.onChange} />
+      <input id={this.props.id} type={this.props.type} placeholder={this.props.placeholder} value={this.props.value} onChange={(e) => handChange(e)} />
     )
   }
 }

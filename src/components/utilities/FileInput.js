@@ -11,7 +11,7 @@ export default class FileInput extends Component {
       <>
         <label htmlFor={this.props.id}>{this.props.name}</label>
         <label className={this.props.class} htmlFor={this.props.id}>
-            <input type="file" id={this.props.id}/>
+            <input type="file" id={this.props.id} onChange={this.props.onChange}/>
         </label>
       </>
     )

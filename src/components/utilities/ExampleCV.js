@@ -43,7 +43,8 @@ const cvExample = {
     education: [
         {
             id: uuidv4(),
-            uniName: 'University of California, Berkeley',
+            uniName: 'University of California',
+            city: 'Berkeley',
             degree: 'Master',
             subject: 'Software Engineer',
             from: '2022',
@@ -52,6 +53,7 @@ const cvExample = {
         {
             id: uuidv4(),
             uniName: 'University of San Francisco',
+            city: 'San Francisco',
             degree: 'Bachelor',
             subject: 'Graphic Design',
             from: '2017',

@@ -4,7 +4,7 @@ import pfp from '../assets/pfp.jpg'
 const emptyCV = {
     personalInfo: {
         firstName: '',
-        LastName: '',
+        lastName: '',
         title: '',
         profileImage: pfp,
         address: '',
@@ -28,6 +28,7 @@ const emptyCV = {
         {
             id: uuidv4(),
             uniName: '',
+            city: '',
             degree: '',
             subject: '',
             from: '',

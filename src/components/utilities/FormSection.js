@@ -7,11 +7,16 @@ export default class FormSection extends Component {
     }
 
     render() {
+        const addSection = (e) => {
+            const addFunction = this.props.onClick
+            return addFunction(e)
+          }
+
         return (
             <div className='form-info'>
                 <p className='form-title'>{this.props.formTitle}</p>
                 {this.props.children}
-                <Button onClick={this.props.onClick} btnName="ADD" className="add-div"/>
+                <Button id={this.props.id} onClick={(e) => addSection(e)} btnName="ADD" className="add-div"/>
             </div>
         )
     }

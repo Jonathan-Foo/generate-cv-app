@@ -9,10 +9,14 @@ export default class Experience extends Component {
     }
     
   render() {
+    const experienceArr = this.props.experienceInfo
+    const experienceItems = experienceArr.map(payload => {
+      return <ExpItems key={payload.id} payload={payload}/>
+    })
+
     return (
-        <FormSection formTitle='Experience'>
-            {this.props.children}
-            <ExpItems />
+        <FormSection id='experience' formTitle='Experience' onClick={this.props.handleAdd}>
+            {experienceItems}
         </FormSection>  
     )
   }

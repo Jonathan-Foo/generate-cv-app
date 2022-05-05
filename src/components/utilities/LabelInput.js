@@ -10,7 +10,7 @@ export default class LabelInput extends Component {
     return (
       <>
       <label htmlFor={this.props.id}>{this.props.name}</label>
-      <Input id={this.props.id} type={this.props.type} />
+      <Input id={this.props.id} type={this.props.type} value={this.props.value} onChange={this.props.onChange}/>
       </>
     )
   }

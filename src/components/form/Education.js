@@ -8,10 +8,14 @@ export default class Education extends Component {
   }
   
   render() {
+    const educationArr = this.props.educationInfo
+    const educetionItems = educationArr.map(payload => {
+      return <EduItems key={payload.id} payload={payload}/>
+    })
+
     return (
-      <FormSection formTitle="Education">
-            {this.props.children}
-            <EduItems />
+      <FormSection id='education' formTitle="Education" onClick={this.props.handleAdd}>
+            {educetionItems}
         </FormSection>  
     )
   }

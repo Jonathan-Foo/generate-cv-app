@@ -8,14 +8,16 @@ export default class EduItems extends Component {
         }
 
   render() {
+    const {id, uniName, city, degree, subject, from, to } = this.props.payload 
+    
     return (
       <div>
-        <Input value={this.props.uniName} type="text" placeholder="University Name" />
-        <Input value={this.props.city} type="text" placeholder="City" />
-        <Input value={this.props.degree} type="text" placeholder="Degree" />
-        <Input value={this.props.city} type="text" placeholder="Subject" />
-        <Input value={this.props.from} type="number" placeholder="From" />
-        <Input value={this.props.to} type="number" placeholder="To" />
+        <Input value={uniName} type="text" placeholder="University Name" />
+        <Input value={city} type="text" placeholder="City" />
+        <Input value={degree} type="text" placeholder="Degree" />
+        <Input value={subject} type="text" placeholder="Subject" />
+        <Input value={from} type="number" placeholder="From" />
+        <Input value={to} type="number" placeholder="To" />
         <Button className="delete-div" btnName="REMOVE" onClick={this.props.onClick}/>
      </div>
     )
