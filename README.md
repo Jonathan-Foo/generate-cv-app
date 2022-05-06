@@ -2,6 +2,5 @@
 
 A resume generating application built to learn and explore React.
 
-constructor(props) {
-super(props);
-}
+Live Preview:
+https://jonathan-foo.github.io/cv-application/
