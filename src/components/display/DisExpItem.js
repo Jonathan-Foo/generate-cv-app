@@ -14,7 +14,7 @@ export default class DisExpItem extends Component {
         </div>
         <div className="detail">
           <p className="info-bold">{this.props.payload.position}</p>
-          <p className="info-subtext">{this.props.payload.company}</p>
+          <p className="info-subtext">{this.props.payload.company}, {this.props.payload.city}</p>
         </div>
       </div>
     )

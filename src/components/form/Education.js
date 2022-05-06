@@ -10,7 +10,7 @@ export default class Education extends Component {
   render() {
     const educationArr = this.props.educationInfo
     const educetionItems = educationArr.map(payload => {
-      return <EduItems key={payload.id} payload={payload}/>
+      return <EduItems handleInfoChange={this.props.handleInfoChange} handleRemove={this.props.handleRemove} key={payload.id} payload={payload}/>
     })
 
     return (

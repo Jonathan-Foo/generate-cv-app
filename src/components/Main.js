@@ -3,7 +3,6 @@ import MainForm from './form/MainForm'
 import MainDisplay from './display/MainDisplay'
 import ExampleCV from './utilities/ExampleCV'
 import EmptyCV from './utilities/EmptyCV'
-import { FaThList } from 'react-icons/fa'
 import emptyCV from './utilities/EmptyCV'
 import { v4 as uuidv4 } from 'uuid';
 
@@ -16,16 +15,16 @@ export default class Main extends Component {
         this.displayRef= React.createRef()
     }
 
-    handleRemove() {
+    
 
-    }
     render() {
         const handleReset = () => {
-            this.setState({cvInfo: EmptyCV})
+            this.setState(EmptyCV)
         }
 
         const handleExample = () => {
-            this.setState({cvInfo: ExampleCV})
+            this.setState(ExampleCV)
+            
         }
 
         const handlePersonalInfo = (e) => {
@@ -70,7 +69,7 @@ export default class Main extends Component {
 
         const handleAdd = (e) => {
             const { id } = e.target
-            console.log(e.target)
+            console.log(this.state)
             if (id === 'education') {
                 this.setState(prevState => {return {
                     ...prevState,
@@ -99,6 +98,30 @@ export default class Main extends Component {
             }
         }
 
+        const handleRemove = (e, section) => {
+            const { id } = e.target
+            this.setState(prevState => { return {
+                ...prevState,
+                [section]: prevState[section].filter(item => item.id !== id)
+            }})
+        }
+
+        const handleInfoChange = (e, section, id) => {
+            
+            const { name, value } = e.target
+            this.setState(prevState => {return {
+                ...prevState,
+                [section]: prevState[section].map(item => {
+                    if (item.id === id) {
+                        return {...item, [name]: value}
+                    } else {
+                        return item
+                    }
+                })
+            }})
+        }
+        
+
 
         return (
             <div className='main-content'>
@@ -109,7 +132,11 @@ export default class Main extends Component {
                     handleReset={handleReset} 
                     handleExample={handleExample} 
                     componentRef={this.displayRef}
-                    handleAdd={handleAdd}/>
+                    handleAdd={handleAdd} 
+                    handleRemove={handleRemove}
+                    handleInfoChange={handleInfoChange}
+                    />
+                    
             </div>
         )
     }

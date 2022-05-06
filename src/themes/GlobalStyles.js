@@ -129,6 +129,8 @@ body {
 
 .description {
   margin-bottom: 1em;
+  width: 470px;
+  word-wrap: break-word;
 }
 .description .info-style1 {
   font-style: italic;

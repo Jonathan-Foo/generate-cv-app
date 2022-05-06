@@ -16,8 +16,8 @@ export default class MainForm extends Component {
       <div className='right-form'>
         <form action="#" autoComplete='off'>
         <PersonalInfo handlePersonalInfo={this.props.handlePersonalInfo} personalInfo={personalInfo} />
-        <Experience experienceInfo={experience} handleAdd={this.props.handleAdd}/>
-        <Education educationInfo={education} handleAdd={this.props.handleAdd}/>
+        <Experience experienceInfo={experience} handleAdd={this.props.handleAdd} handleRemove={this.props.handleRemove} handleInfoChange={this.props.handleInfoChange}/>
+        <Education educationInfo={education} handleAdd={this.props.handleAdd} handleRemove={this.props.handleRemove} handleInfoChange={this.props.handleInfoChange}/>
         <Options handleReset={this.props.handleReset} handleExample={this.props.handleExample} componentRef={this.props.componentRef.current}/>
         </form>
       </div>
