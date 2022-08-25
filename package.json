@@ -1,7 +1,7 @@
 {
   "name": "cv",
   "version": "0.1.0",
-  "homepage": "http://jonathan-foo.github.io/cv-application",
+  "homepage": "http://jonathan-foo.github.io/generate-cv-app",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",

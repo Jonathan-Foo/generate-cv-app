@@ -15,8 +15,6 @@ export default class Main extends Component {
         this.displayRef= React.createRef()
     }
 
-    
-
     render() {
         const handleReset = () => {
             this.setState(EmptyCV)

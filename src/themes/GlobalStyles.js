@@ -325,6 +325,12 @@ body {
   }
 }
 
+@media (max-width: 1000px) {
+  .main-content {
+    padding: 2em 0em;
+  }
+}
+
 `
 
 export default GlobalStyle;
