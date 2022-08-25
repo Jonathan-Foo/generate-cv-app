@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/96642972/186633394-4bebf07f-6689-4fac-8bbf-5ef689792adb.png)
 A resume generating application built to learn and explore React.
 
-Live Preview :globe_with_meridians:: https://jonathan-foo.github.io/cv-application/
+Live Preview :globe_with_meridians:: https://jonathan-foo.github.io/generate-cv-app/
 
 # Features :sparkles:# Features :sparkles:
 - Easily add or remove information for each section
